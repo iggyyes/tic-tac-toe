@@ -18,8 +18,23 @@
     <title>TIC TAC TOE</title>
   </head>
   <body>
-    <section class="">
-      <div class="container">pieczareczki</div>
+    <section class="game container">
+      <div class="board" id="board">
+        <div class="board__cell" data-cell></div>
+        <div class="board__cell" data-cell></div>
+        <div class="board__cell" data-cell></div>
+        <div class="board__cell" data-cell></div>
+        <div class="board__cell" data-cell></div>
+        <div class="board__cell" data-cell></div>
+        <div class="board__cell" data-cell></div>
+        <div class="board__cell" data-cell></div>
+        <div class="board__cell" data-cell></div>
+      </div>
+
+      <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text></div>
+        <button id="restartButton">restart</button>
+      </div>
     </section>
   </body>
 </html>
