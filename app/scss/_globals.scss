@@ -1,0 +1,17 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+//util
+
+.container {
+    margin: 0 auto;
+    width: 25rem;
+    margin-top: 10rem;
+}
