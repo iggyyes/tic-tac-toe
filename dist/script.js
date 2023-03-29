@@ -1,2 +1,2 @@
-"use strict";console.log("pieczareczki");
+"use strict";var gameBoard=document.querySelector("#gameboard"),infoDisplay=document.querySelector("#info"),startCells=["","","","","","","","",""];function createBoard(){startCells.forEach((function(e,a){var t=document.createElement("div");t.classList.add("square"),t.id=a,t.addEventListener("click",addGo),gameBoard.append(t)}))}function addGo(e){var a=document.createElement("div");a.classList.add("cross"),e.target.append(a)}createBoard();
 //# sourceMappingURL=script.js.map

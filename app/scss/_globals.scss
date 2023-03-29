@@ -12,6 +12,60 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 25rem;
+    width: 27rem;
     margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gameboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 306px;
+    height: 306px;
+    background-color: black;
+    border: 3px solid black;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.circle {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 15px solid blue;
+}
+
+.cross {
+    height: 90px;
+    width: 90px;
+    position: relative;
+}
+
+.cross::before, .cross::after {
+    content: '';
+    position: absolute;
+    background-color: red;
+    left: 50%;
+    width: 30%;
+    height: 100%;
+    margin-left: -15%;
+}
+
+.cross::before {
+    transform: rotate(45deg);
+}
+
+.cross::after {
+    transform: rotate(-45deg);
 }
